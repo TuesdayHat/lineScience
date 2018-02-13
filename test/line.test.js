@@ -26,6 +26,6 @@ describe('Line', function(){
   });
 
   it("should put an @ symbol on current position", function(){
-    assert(game.display[3] === "@");
+    assert.equal(game.display[3], "@");
   });
 });
