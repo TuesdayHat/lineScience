@@ -7,24 +7,35 @@ export class Line {
       this.display += "-";
     }
     this.speed = (11-speed)*100;
-    
-    this.pos = setInterval(() => {
-      position++;
-      if (position < size){
-        updateBoard();
-      }else{
-        clearInterval(pos);
-      }
+
+    // this.pos = setInterval(() => {
+    //   this.position++;
+    //   if (position < size){
+    //     updateBoard();
+    //   }else{
+    //     clearInterval(pos);
+    //   }
+    // }, this.speed);
+  }
+
+  startClock(){
+    var pos = setInterval(() => {
+      this.position++;
+      // console.log(this.position);
+      // if (this.position < this.size){
+      //   this.updateBoard();
+      // }else{
+      //   clearInterval(pos);
+      // }
     }, this.speed);
   }
 
-
   updateBoard(){
     for(let i=0; i<display.length; i++){
-      if (i === position){
-        display[i] = "@";
+      if (i === this.position){
+        this.display[i] = "@";
       } else {
-        display[i] = "-"
+        this.display[i] = "-"
       }
     }
   }
