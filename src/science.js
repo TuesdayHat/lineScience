@@ -8,19 +8,19 @@
 // }, 2000);
 
 let position = 0;
-let size = 30;
+const size = 30;
 
-var pos = setInterval(function(){
+const pos = setInterval(function(){
   position++;
   if (position < size){
-    displayPosition();
+    displayPositionCLI();
   }else{
     process.stdout.write("\n");
     clearInterval(pos);
   }
 }, 200);
 
-function displayPosition(){
+function displayPositionCLI(){
   for(let i=0;i<size;i++){
     process.stdout.write("-");
   }

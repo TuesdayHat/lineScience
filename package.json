@@ -1,7 +1,6 @@
 {
   "name": "line",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -36,5 +35,14 @@
     "jquery": "^3.3.1",
     "popper": "^1.0.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuesdayHat/lineScience.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TuesdayHat/lineScience/issues"
+  },
+  "homepage": "https://github.com/TuesdayHat/lineScience#readme",
+  "description": ""
 }
